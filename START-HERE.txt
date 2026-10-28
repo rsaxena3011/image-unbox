@@ -1,0 +1,126 @@
+IMAGE UNBOX - v1.0
+Extract images from PowerPoint, Word & Excel.
+Free. Offline. No sign-up.
+
+OPEN THE TOOL
+1. Extract this ZIP to a folder.
+2. Double-click Image-Unbox.html. If your computer opens a text editor,
+   right-click the file and choose Open with > Chrome or Edge.
+3. Click Try the sample, or choose your own PPTX, DOCX or XLSX documents.
+4. Preview images and select the ones you need.
+5. Click Save selected as ZIP. Or use Save original on a single image.
+
+The app is ONE HTML file. It needs no installer, account, Office installation,
+server, administrator permission or internet connection. Keep that file anywhere
+on your computer. The Promo folder is only for publishing and promotion.
+
+WHAT YOU CAN DO
+- Extract images from several documents in one collection.
+- See thumbnails, formats, pixel dimensions and file sizes.
+- Search by image name, source document or internal path.
+- Filter by image type or minimum longest-side dimension.
+- Sort by source, filename, file size or resolution.
+- Select unique: keep one copy of each byte-identical image across the collection.
+- Save an individual image in its stored format.
+- Export selected images as a ZIP, grouped into source-document folders.
+- Include a CSV index with source paths, output paths, dimensions and sizes.
+- Stop an extraction; keep images already extracted. Clear when finished.
+
+Selections apply to the entire collection, including filtered-out images.
+Select shown adds the current page to the selection. It does not deselect hidden
+images. For only the current filtered page, use Deselect all, then Select shown.
+Select unique applies to all documents, not just the current filter.
+
+QUALITY & SCOPE
+"Original" means the exact image bytes STORED INSIDE the document. This tool
+does not resize, recompress, convert or add a watermark. It cannot recover
+detail already removed by compression before or while the document was saved.
+
+Supported documents: standard unencrypted .pptx, .docx and .xlsx packages.
+Common raster images preview in the browser. Some formats, including SVG,
+TIFF, EMF and WMF, can be saved without a preview. SVG is never rendered in
+the app. Very large image previews are disabled to limit memory use.
+
+This version does not support PDF, old .ppt/.doc/.xls, password-protected
+documents, ZIP64 packages, or external images linked from outside a document.
+Charts, shapes, SmartArt, slide layouts, crops, rotations and effects are not
+rendered. An extracted picture can therefore look different from the slide.
+Stored media from masters, hidden slides, headers or footers may be included.
+The app uses internal image filenames; it does not map images to slide/page
+numbers. Byte-identical duplicates are detected, not visually similar photos.
+
+LIMITS
+Up to 50 documents per collection; 500 MB per document; 64 MB per image;
+2,000 images or 250 MB of extracted image bytes per collection. Memory use
+can be higher during previews and ZIP export. Save and clear between batches.
+Malformed or unsupported items are reported without silently exporting them.
+
+PRIVACY
+All extraction happens in the browser on your device. No uploads, analytics,
+external scripts or network requests. Your source documents are never modified.
+Closing or reloading the tab clears the collection. Save images first.
+Downloaded copies remain wherever your browser saves downloads.
+
+IF SOMETHING DOESN'T WORK
+- Open the extracted HTML in a current desktop Chrome or Edge browser.
+- First try the built-in sample to check extraction in your browser.
+- If ZIP saving does not start, click the green Download ZIP link and check
+  your browser's download list, usually Ctrl+J (Cmd+Shift+J in some browsers).
+- Check notices above the collection for unsupported or damaged documents.
+- Re-save an old or unusual document as PPTX/DOCX/XLSX in an office editor.
+- For a large collection, use smaller batches and close other memory-heavy tabs.
+- A preview placeholder does not mean the original image cannot be saved.
+
+FOR PUBLISHING
+Open Promo/LISTING-AND-LAUNCH.md for paste-ready product copy and launch posts.
+Open Promo/ARTWORK-GUIDE.txt to choose banner sizes and see the design prompts.
+Start with 01-Cover-A-1280x720.png and 06-Thumbnail-600x600.png.
+All 12 promotional PNGs are included. Nothing needs to be bought or installed.
+If you want a smaller customer download, distribute Image-Unbox.html with this
+guide; keep the promotional assets for your storefront and social posts.
+
+EDITING & SOURCE
+Open Image-Unbox.html in a text editor. Styles and all JavaScript are inline.
+There are no dependencies, build steps or external libraries. The embedded
+sample is a small base64 PPTX; the extraction code is in the UnboxCore section.
+
+VALIDATION NOTES
+Core extraction and ZIP export passed 23 automated test groups. PPTX, DOCX
+and XLSX fixtures were produced using independent Office-file libraries.
+Extracted images and an exported ZIP were reopened with Python; SHA-256 hashes
+matched all nine expected image entries byte for byte. Tests also covered
+malformed ZIPs, checksums, unsafe paths, encryption, oversized inflation,
+Unicode filenames, unsupported compression, abort handling and CSV escaping.
+Chromium UI checks covered the built-in sample, duplicates, filters, preview,
+ZIP-ready state and narrow-screen layouts. Automated browser download capture
+timed out, so completion of the browser download was not verified. The ZIP
+writer itself passed independent byte checks. Desktop operating-system save
+dialogs and opening the file by double-click on Windows/macOS have not been
+independently tested here. Run the included sample locally before publishing.
+These checks do not guarantee compatibility with every Office document.
+
+LICENSE - APP CODE & DOCUMENTATION
+MIT License
+Copyright (c) 2026 Image Unbox contributors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+of the Software, and to permit persons to whom the Software is furnished to do
+so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+Campaign artwork was created using AI image generation for this project.
+The PNGs are flattened raster designs; prompt and export notes are included.
+No third-party fonts, stock-photo files or software dependencies are bundled.
